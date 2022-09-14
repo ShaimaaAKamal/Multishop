@@ -104,6 +104,107 @@
         background-color: transparent;
     }
 
+    .homeCaption{
+        background-size: cover;
+        background-position: center center;
+        height: 55vh;
+    }
+
+    .homeCaption1{
+        background-image: linear-gradient(rgba(3,3,3,.5),rgba(3,3,3,.5)),url("../img/carousel-1.jpg");
+
+    }
+    .homeCaption2{
+        background-image: linear-gradient(rgba(3,3,3,.5),rgba(3,3,3,.5)),url("../img/carousel-2.jpg");
+
+    }
+    .homeCaption3{
+        background-image: linear-gradient(rgba(3,3,3,.5),rgba(3,3,3,.5)),url("../img/carousel-3.jpg");
+
+    }
+
+    .homeCaption a:hover{
+        background-color: #fff;
+        color:var(--darkGray) !important;
+    }
+    .carousel-indicators [data-bs-target]{
+        width:15px;
+        height:15px;
+        background-color: transparent;
+        border:1px solid #fff;
+    }
+
+    .homeCaption h3{
+        transform: translateY(-100px);
+        animation-name: heading;
+        animation-duration:1s;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    
+    @keyframes heading {
+        0%{
+            transform: translateY(-100px);
+        }
+        100%{
+            transform: translateY(0);
+
+        }
+    }
+
+    .homeCaption p {
+        animation-name: paragraph;
+        transition: all 1s;
+        animation-duration:1s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes paragraph {
+        0%{
+            transform: scaleX(.5)
+        }
+        50%{
+         transform:scaleX(1.1)
+        }
+       
+        100%{
+            transform: none;
+        }
+    }
+
+
+    .homeCaption a{
+        display: inline-block;
+        transition: all 1s;
+        animation-name: anchor;
+        animation-duration:1s;
+        animation-fill-mode: forwards;
+        transform: translateY(100px);
+
+    }
+
+    @keyframes anchor {
+        0%{
+            transform: translateY(100px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+
+
+    .carousel-indicators .active {
+        width:40px;
+        background-color: #fff;
+
+    }
+.carousel-indicators [data-bs-target]
+
+    .w-p{
+        width:90%;
+    }
+
 @media screen and (min-width:992px){
     .multiColor{
         background-color: var(--darkGray);
@@ -116,6 +217,10 @@
 
     .bg-logo{
         background-color: #fff;
+    }
+
+    .w-p{
+        width:60%;
     }
     
 }
