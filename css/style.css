@@ -5,6 +5,10 @@
     --siteColor:#FFD334;
 }
 
+body{
+    background-color: var(--bgGray);
+}
+
 .text-site {
     color:var(--siteColor);
 }
@@ -42,6 +46,9 @@
 
 .w-35{
     width:35%;
+}
+.fs-0{
+    font-size: 2.8rem;
 }
 
 
