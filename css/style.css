@@ -2,8 +2,12 @@
     --siteGray:#6C757D;
     --bgGray:#F5F5F5;
     --darkGray:#3D464D;
+    --siteColor:#FFD334;
 }
 
+.text-site {
+    color:var(--siteColor);
+}
 .text-gray{
     color:var(--siteGray) !important;
 }
@@ -15,6 +19,9 @@
 }
 .bg-gray{
     background-color: var(--bgGray);
+}
+.bg-site{
+    background-color: var(--siteColor);
 }
 .p-6{
     padding:0 .3rem;
@@ -33,6 +40,10 @@
     font-size: .65rem;
 }
 
+.w-35{
+    width:35%;
+}
+
 
 .links a:hover{
     text-decoration: underline !important;
@@ -45,4 +56,58 @@
     background-color: var(--bgGray);
     border:1px solid #fff;
     outline: 1px solid #6c757d2a;
+}
+
+.form-control::placeholder{
+    color:#999;
+}
+
+.multiColor{
+    background-color: #fff;
+    color:var(--darkGray) !important;
+}
+
+.shopColor{
+    color:#fff !important;
+    background-color: var(--siteColor);
+}
+
+.bg-nav{
+    background-color: var(--darkGray);
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    }
+   
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }
+
+    .navbar-nav .nav-link.active{
+        color:var(--siteColor) !important;
+    }
+
+@media screen and (min-width:992px){
+    .multiColor{
+        background-color: var(--darkGray);
+        color:var(--siteColor) !important;
+    }
+    
+    .shopColor{
+        color:var(--darkGray) !important;
+    }
+
+    .bg-logo{
+        background-color: #fff;
+    }
+    
 }
