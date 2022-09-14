@@ -1,0 +1,48 @@
+:root{
+    --siteGray:#6C757D;
+    --bgGray:#F5F5F5;
+    --darkGray:#3D464D;
+}
+
+.text-gray{
+    color:var(--siteGray) !important;
+}
+.text-dGray{
+    color:var(--darkGray) !important;
+}
+.border-gray{
+    border:1px solid var(--darkGray);
+}
+.bg-gray{
+    background-color: var(--bgGray);
+}
+.p-6{
+    padding:0 .3rem;
+}
+
+.btn-white{
+    background-color: #fff;
+}
+.fs-9{
+    font-size: .9rem;
+}
+.fs-7{
+    font-size: .7rem;
+}
+.fs-65{
+    font-size: .65rem;
+}
+
+
+.links a:hover{
+    text-decoration: underline !important;
+}
+
+.dropdown .btn{
+    border-radius: 0;
+}
+.dropdown .btn:hover{
+    background-color: var(--bgGray);
+    border:1px solid #fff;
+    outline: 1px solid #6c757d2a;
+}
