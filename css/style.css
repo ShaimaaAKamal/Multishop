@@ -218,16 +218,16 @@ body{
         width:90%;
     }
 
-    .homeRight img, .homeRight a{
+    .homeRight img, .homeRight a,.offer img,.offer a{
       transition: all 1s;
     } 
-    .homeRight:hover img{
+    .homeRight:hover img,.offer:hover img{
     transform: scale(1.2) rotate(5deg);
    }
-    .homeRight a{
+    .homeRight a,.offer a{
         background-color: #ffd334c7;
     }
-    .homeRight:hover a{
+    a:hover ,a:hover{
         background-color:var(--siteColor);
     }
   
