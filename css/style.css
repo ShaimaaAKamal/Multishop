@@ -96,6 +96,14 @@
         color:var(--siteColor) !important;
     }
 
+    .submenulinks{
+        border-bottom: 1px solid var(--bgGray);
+    }
+    .submenulinks:hover{
+        color:var(--darkGray)!important;
+        background-color: transparent;
+    }
+
 @media screen and (min-width:992px){
     .multiColor{
         background-color: var(--darkGray);
