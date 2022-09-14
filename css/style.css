@@ -231,15 +231,17 @@ body{
         height:auto
     }
 
-    .categories h2::after{
+      .categories h2::after{
         content:"";
-        width:calc(100% - 160px);
+        width:calc(100% - 170px);
         border:.5px dashed var(--darkGray);
         position: absolute;
-        top:1.3rem;
-        left:161px;
-    }
+        top:50%;
+        right:0;
+    
+    }  
 
+  
     .category .catInfo,.category img{
         transition: all .5s;
     }
