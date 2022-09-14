@@ -235,7 +235,7 @@ body{
         height:auto
     }
    
-      .categories h2::after,.Featured h2::after{
+      .categories h2::after,.Featured h2::after,.Recent h2::after{
         content:"";
         border:.5px dashed var(--darkGray);
         position: absolute;
@@ -251,6 +251,10 @@ body{
     .Featured h2::after{
        width:calc(100% - 300px);
     }
+
+    .Recent h2::after{
+        width:calc(100% - 210px);
+     }
     
 
   
@@ -339,6 +343,9 @@ body{
      .categories h2::after{
         width:calc(100% - 170px);
     }
+    .Recent h2::after{
+        width:calc(100% - 250px);
+     }
 
     
 }
