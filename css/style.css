@@ -231,6 +231,29 @@ body{
         height:auto
     }
 
+    .categories h2::after{
+        content:"";
+        width:calc(100% - 160px);
+        border:.5px dashed var(--darkGray);
+        position: absolute;
+        top:1.3rem;
+        left:161px;
+    }
+
+    .category .catInfo,.category img{
+        transition: all .5s;
+    }
+    .catImage{
+        padding-left:0px;
+    }
+    
+    .category:hover .catInfo{
+          background-color: var(--siteColor);
+    }
+    .category:hover img{
+        transform: scale(1.2) rotate(5deg);
+    }
+
 @media screen and (min-width:992px){
     .multiColor{
         background-color: var(--darkGray);
