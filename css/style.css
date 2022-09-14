@@ -43,7 +43,9 @@ body{
 .fs-65{
     font-size: .65rem;
 }
-
+.f-8{
+    font-size: .8rem;
+}
 .w-35{
     width:35%;
 }
@@ -232,10 +234,9 @@ body{
     .homeRight{
         height:auto
     }
-
-      .categories h2::after{
+   
+      .categories h2::after,.Featured h2::after{
         content:"";
-        width:calc(100% - 170px);
         border:.5px dashed var(--darkGray);
         position: absolute;
         top:50%;
@@ -243,8 +244,17 @@ body{
     
     }  
 
+    .categories h2::after{
+        width:calc(100% - 150px);
+    }
+
+    .Featured h2::after{
+       width:calc(100% - 300px);
+    }
+    
+
   
-    .category .catInfo,.category img{
+    .category .catInfo,.category img, .featuredCard img{
         transition: all .5s;
     }
     .catImage{
@@ -258,6 +268,50 @@ body{
         transform: scale(1.2) rotate(5deg);
     }
 
+    .featuredCard .featuredsocials{
+        transition: all .2s;
+        top:100%;
+    }
+    .featuredCard:hover .featuredsocials{
+       top:0 
+    }
+    .featuredsocials i {
+        transition: all .2s;
+        transform:translateY(500%);
+    }
+    .featuredsocials:hover .icon1{
+        transition-delay: .2s;
+        transform:translateY(0);
+
+  }
+    .featuredsocials:hover .icon2{
+          transition-delay: .3s;
+          transform:translateY(0);
+
+    }
+     .featuredsocials:hover .icon3{
+        transition-delay: .35s;
+        transform:translateY(0);
+
+  }
+    .featuredsocials:hover .icon4{
+    transition-delay: .4s;
+    transform:translateY(0);
+
+   } 
+
+    .featuredCard:hover img{
+        transform: scale(1.2);
+    }
+    .featuredsocials i:hover{
+        color:var(--siteColor) !important;
+        background-color: var(--darkGray);
+        cursor: pointer;
+    } 
+
+    .productTitle:hover{
+        color:var(--siteColor) !important;
+    }
 @media screen and (min-width:992px){
     .multiColor{
         background-color: var(--darkGray);
@@ -278,6 +332,12 @@ body{
 
     .homeRight{
         height:calc(55vh/2 - .8rem);
+    }
+    .Featured h2::after{
+        width:calc(100% - 350px);
+     }
+     .categories h2::after{
+        width:calc(100% - 170px);
     }
 
     
