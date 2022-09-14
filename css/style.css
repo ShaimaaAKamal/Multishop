@@ -123,6 +123,8 @@
 
     }
 
+   
+
     .homeCaption a:hover{
         background-color: #fff;
         color:var(--darkGray) !important;
@@ -199,10 +201,27 @@
         background-color: #fff;
 
     }
-.carousel-indicators [data-bs-target]
+
 
     .w-p{
         width:90%;
+    }
+
+    .homeRight img, .homeRight a{
+      transition: all 1s;
+    } 
+    .homeRight:hover img{
+    transform: scale(1.2) rotate(5deg);
+   }
+    .homeRight a{
+        background-color: #ffd334c7;
+    }
+    .homeRight:hover a{
+        background-color:var(--siteColor);
+    }
+  
+    .homeRight{
+        height:auto
     }
 
 @media screen and (min-width:992px){
@@ -222,5 +241,10 @@
     .w-p{
         width:60%;
     }
+
+    .homeRight{
+        height:calc(55vh/2 - .8rem);
+    }
+
     
 }
