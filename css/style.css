@@ -353,6 +353,18 @@ body{
         background-color: var(--siteGray);
         color:var(--siteColor) !important;
     }
+
+    .nav-tabs .nav-link.active{
+        background-color: #F5F5F5;
+    }
+
+    .AddInfo{
+        border-bottom: .5px dashed #DFDFDF;
+    }
+    .nav-tabs .nav-link{
+        color:var(--darkGray);
+    }
+    
 @media  screen and (min-width:576px){
     .Featured h2::after{
         width:calc(100% - 280px);
