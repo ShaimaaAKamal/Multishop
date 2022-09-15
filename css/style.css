@@ -10,7 +10,9 @@ body{
 }
 .bg-title{
     background-color: var(--bgGray);
-
+}
+.w-15{
+    width:15%;
 }
 .bg-red{
     background-color: #DC3545;
@@ -378,6 +380,11 @@ body{
     .cartInfo .form-control,.input-group-text{
         border-radius: 0;
         border:none
+    }
+
+    .table {
+        border-collapse: separate;
+        border-spacing:0 20px;
     }
 
 
