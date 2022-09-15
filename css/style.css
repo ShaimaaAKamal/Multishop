@@ -249,7 +249,7 @@ body{
     }
 
     .Featured h2::after{
-       width:calc(100% - 300px);
+       width:calc(100% - 280px);
     }
 
     .Recent h2::after{
@@ -316,6 +316,12 @@ body{
     .productTitle:hover{
         color:var(--siteColor) !important;
     }
+
+@media  screen and (min-width:576px){
+    .Featured h2::after{
+        width:calc(100% - 280px);
+     }
+}
 @media screen and (min-width:992px){
     .multiColor{
         background-color: var(--darkGray);
