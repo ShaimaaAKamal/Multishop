@@ -348,6 +348,11 @@ body{
         text-decoration: underline !important;
         background-color: transparent;
     }
+
+    .pagination a:hover{
+        background-color: var(--siteGray);
+        color:var(--siteColor) !important;
+    }
 @media  screen and (min-width:576px){
     .Featured h2::after{
         width:calc(100% - 280px);
