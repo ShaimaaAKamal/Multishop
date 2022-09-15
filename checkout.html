@@ -156,12 +156,174 @@
                 <div aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
                       <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-dGray ">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Shop Contact</li>
+                      <li class="breadcrumb-item active" aria-current="page">Checkout</li>
                     </ol>
                   </div>
             </div>
          </section>
+         
 
+         <section class="checkInfo my-5">
+           <div class="container">
+              <div class="row gy-4 gx-5">
+                <div class="col-lg-8">
+                     <div>
+                        <h2 class="text-dGray position-relative mb-4">BILLING ADDRESS</h2>
+                        <div class="row bg-white p-4 g-4">
+                          <div class="col-md-6">
+                            <div >
+                                <label for="fname" class="form-label text-gray">First Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="John">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="lname" class="form-label text-gray">Last Name</label>
+                                <input type="text" class="form-control" id="lname" placeholder="Doe">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="email" class="form-label text-gray">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="phone" class="form-label text-gray">Mobile Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="+123456679">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="address1" class="form-label text-gray">Address Line 1</label>
+                                <input type="text" class="form-control" id="address1" placeholder="123 Street">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="address2" class="form-label text-gray">Address Line 2</label>
+                                <input type="text" class="form-control" id="address2" placeholder="123 Street">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="country" class="form-label text-gray">Country</label>
+                                <select id="country" class="form-select" aria-label="Default select example">
+                                    <option selected>United State</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="city" class="form-label text-gray">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="New York">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="state" class="form-label text-gray">State</label>
+                                <input type="text" class="form-control" id="state" placeholder="New York">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                                <label for="zip" class="form-label text-gray">Zip Code</label>
+                                <input type="text" class="form-control" id="zip" placeholder="123">
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="create">
+                                    <label class="form-check-label text-gray" for="create">
+                                    Create an account                                    </label>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="create">
+                                    <label class="form-check-label text-gray" for="create">
+                                     Ship to different address                                   </label>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+
+                     </div>
+                </div>
+                <div class="col-lg-4">
+                     <div>
+                        <h5 class="text-dGray position-relative mb-3">ORDER TOTAL</h5>
+                         
+                        <div class="bg-white p-4">
+                            <div class="d-flex justify-content-between align-items-center pb-2">
+                                <h6 class="text-dGray">Products</h6>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center pb-2 text-gray mb-2">
+                                <span>Product Name 1</span>
+                                <span>$150</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pb-2 text-gray mb-2">
+                                <span>Product Name 2</span>
+                                <span>$150</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pb-2 AddInfo text-gray">
+                                <span>Product Name 3</span>
+                                <span>$150</span>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <span class="fw-semibold">Subtotal</span>
+                                <span>$150</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-2 pb-3 AddInfo">
+                                <span class="fw-semibold">Shipping</span>
+                                <span>$10</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-3 ">
+                                <span class="fw-bold">Total</span>
+                                <span class="fw-bold">$460</span>
+                            </div>
+                         </div>
+
+                         <h5 class="text-dGray position-relative my-3 pay">Payment</h5>
+                         
+                        <div class="bg-white p-4">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input text-gray" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label text-gray" for="flexRadioDefault1">
+                                  Paypal
+                                </label>
+                              </div>
+                              <div class="form-check mb-2">
+                                <input class="form-check-input text-gray" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label text-gray" for="flexRadioDefault1">
+                                  Direct Check
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input text-gray" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label text-gray" for="flexRadioDefault1">
+                                  Bank Transfer
+                                </label>
+                              </div>
+                              <button class="btn text-center w-100 bg-site text-dGray fw-semibold py-3 rounded-0 mt-3">Place Order</button>
+
+                         </div>
+                        
+
+                     </div>
+                </div>
+              </div>
+           </div>
+         </section>
 
 
 

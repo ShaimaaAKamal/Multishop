@@ -246,7 +246,7 @@ body{
         height:auto
     }
    
-      .categories h2::after,.Featured h2::after,.Recent h2::after,.shop h5::after,.AlsoLike h2::after,.contactInfo h2::after,.cartInfo h5::after{
+      .categories h2::after,.Featured h2::after,.Recent h2::after,.shop h5::after,.AlsoLike h2::after,.contactInfo h2::after,.cartInfo h5::after,.checkInfo h5::after,.checkInfo h2::after{
         content:"";
         border:.5px dashed var(--darkGray);
         position: absolute;
@@ -262,7 +262,7 @@ body{
     .Featured h2::after{
        width:calc(100% - 280px);
     }
-    .AlsoLike h2::after{
+    .AlsoLike h2::after, .checkInfo h2::after{
         width:calc(100% - 280px);
     }
 
@@ -272,6 +272,10 @@ body{
      .shop h5::after,   .cartInfo h5::after{
         width:calc(100% - 160px);
      }
+     .checkInfo h5::after{
+        width:calc(100% - 120px);
+     }
+    
  
 
   
@@ -432,12 +436,19 @@ body{
         width:calc(100% - 250px);
      }
 
-     .AlsoLike h2::after{
+     .AlsoLike h2::after, .checkInfo h2::after{
         width:calc(100% - 320px);
      }
 
     .AlsoLike .owl-item{
         width:calc(100%/4 );
     }
+    .checkInfo h5::after{
+        width:calc(100% - 140px);
+     }
+     .checkInfo .pay::after{
+        width:calc(100% - 100px);
+
+     }
     
 }
