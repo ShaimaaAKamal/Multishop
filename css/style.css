@@ -378,6 +378,7 @@ body{
         font-size: 1.1rem;
     }
     .cartInfo .form-control,.input-group-text,.news .form-control{
+        border-radius: 0;
         border:none
     }
 
