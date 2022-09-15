@@ -8,6 +8,10 @@
 body{
     background-color: var(--bgGray);
 }
+.bg-title{
+    background-color: var(--bgGray);
+
+}
 .bg-red{
     background-color: #DC3545;
 }
@@ -245,42 +249,21 @@ body{
     .homeRight{
         height:auto
     }
+    .pr-3 {
+  padding-right: 1rem !important;
+}
    
-      .categories h2::after,.Featured h2::after,.Recent h2::after,.shop h5::after,.AlsoLike h2::after,.contactInfo h2::after,.cartInfo h5::after,.checkInfo h5::after,.checkInfo h2::after{
+   
+.categories h2::after,.Featured h2::after,.Recent h2::after,.shop h5::after,.AlsoLike h2::after,.contactInfo h2::after,.cartInfo h5::after,.checkInfo h5::after,.checkInfo h2::after{
         content:"";
         border:.5px dashed var(--darkGray);
         position: absolute;
+        width: 100%;
+        left: 0;
         top:50%;
-        right:0;
-    
+        z-index: -1;
+
     }  
-
-    .categories h2::after{
-        width:calc(100% - 150px);
-    }
-
-    .Featured h2::after{
-       width:calc(100% - 280px);
-    }
-    .AlsoLike h2::after{
-        width:calc(100% - 280px);
-    }
-
-    .Recent h2::after{
-        width:calc(100% - 210px);
-     }
-     .shop h5::after,   .cartInfo h5::after{
-        width:calc(100% - 160px);
-     }
-     .checkInfo h5::after{
-        width:calc(100% - 140px);
-     }
-    
-     .checkInfo h2::after{
-        width:calc(100% - 220px);
-     }
- 
-
   
     .category .catInfo,.category img, .featuredCard img{
         transition: all .5s;
@@ -396,11 +379,7 @@ body{
         border-radius: 0;
         border:none
     }
-@media  screen and (min-width:576px){
-    .Featured h2::after{
-        width:calc(100% - 280px);
-     }
-}
+
 
 @media  screen and (min-width:768px){
    .AlsoLike .owl-item{
@@ -429,29 +408,10 @@ body{
     .homeRight{
         height:calc(55vh/2 - .8rem);
     }
-    .Featured h2::after{
-        width:calc(100% - 350px);
-     }
-     .categories h2::after,.contactInfo h2::after{
-        width:calc(100% - 170px);
-    }
-    .Recent h2::after{
-        width:calc(100% - 250px);
-     }
-
-     .AlsoLike h2::after, .checkInfo h2::after{
-        width:calc(100% - 320px);
-     }
 
     .AlsoLike .owl-item{
         width:calc(100%/4 );
     }
-    .checkInfo h5::after{
-        width:calc(100% - 140px);
-     }
-     .checkInfo .pay::after{
-        width:calc(100% - 100px);
-
-     }
+  
     
 }
