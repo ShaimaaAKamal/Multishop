@@ -15,11 +15,17 @@ body{
 .text-gray{
     color:var(--siteGray) !important;
 }
+.text-lgray{
+    color:#bbb !important;
+}
 .text-dGray{
     color:var(--darkGray) !important;
 }
 .border-gray{
     border:1px solid var(--darkGray);
+}
+.border-lgray{
+    border:.5px solid #bbb;
 }
 .bg-gray{
     background-color: var(--bgGray);
@@ -238,7 +244,7 @@ body{
         height:auto
     }
    
-      .categories h2::after,.Featured h2::after,.Recent h2::after{
+      .categories h2::after,.Featured h2::after,.Recent h2::after,.shop h5::after{
         content:"";
         border:.5px dashed var(--darkGray);
         position: absolute;
@@ -257,6 +263,9 @@ body{
 
     .Recent h2::after{
         width:calc(100% - 210px);
+     }
+     .shop h5::after{
+        width:calc(100% - 160px);
      }
     
 
