@@ -27,6 +27,9 @@ body{
 .bg-site{
     background-color: var(--siteColor);
 }
+.bg-dGray{
+    background-color: var(--darkGray);
+}
 .p-6{
     padding:0 .3rem;
 }
@@ -315,6 +318,20 @@ body{
 
     .productTitle:hover{
         color:var(--siteColor) !important;
+    }
+
+    footer a:hover{
+        text-decoration: underline !important;
+        color:var(--siteGray) !important;
+        background-color: transparent;
+    }
+    .socaials a:hover{
+        text-decoration: none !important;
+        color:var(--siteColor) !important;
+        background-color: var(--siteGray);
+    }
+    .border-footer{
+        border-bottom:1px solid var(--siteGray);
     }
 
 @media  screen and (min-width:576px){
