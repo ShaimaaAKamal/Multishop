@@ -364,12 +364,26 @@ body{
     .nav-tabs .nav-link{
         color:var(--darkGray);
     }
-    
+   .owl-item{
+        width:calc(100%);
+        display: inline-block;
+
+    }
+    .owl-nav {
+        display: none;
+    }
 @media  screen and (min-width:576px){
     .Featured h2::after{
         width:calc(100% - 280px);
      }
 }
+
+@media  screen and (min-width:768px){
+   .owl-item{
+        width:calc(100%/2 );
+    }
+}
+
 @media screen and (min-width:992px){
     .multiColor{
         background-color: var(--darkGray);
@@ -401,5 +415,8 @@ body{
         width:calc(100% - 250px);
      }
 
+    .owl-item{
+        width:calc(100%/4 );
+    }
     
 }
